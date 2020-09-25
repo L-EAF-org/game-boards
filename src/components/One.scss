@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  color: #444;
+}
+
+.peg {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.6em;
+  font-size: 120%;
+  margin: 0.2em;
+}
+
+.hole {
+  border: 0.2em solid #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.6em;
+  font-size: 120%;
+  margin: 0.2em;
+  width: 2em;
+}
+.hole:empty::after {
+  content: '.';
+  visibility: hidden;
+}
